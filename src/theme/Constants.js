@@ -1,0 +1,4 @@
+export default {
+  HOME_HORIZONTAL_PADDING: 15,
+  HOME_BUTTONS_SPACE: 8,
+};
