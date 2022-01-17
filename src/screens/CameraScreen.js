@@ -1,3 +1,8 @@
+/**
+ * Sample React Native App for BlinkID
+ * https://github.com/BlinkID/blinkid-react-native
+ */
+
 import React, { Component } from "react";
 import * as BlinkIDReactNative from "blinkid-react-native";
 import {
@@ -16,7 +21,7 @@ const licenseKey = Platform.select({
   ios: "sRwAAAEVY29tLm1pY3JvYmxpbmsuc2FtcGxl1BIcP4FpSuS/38JVOIaKMxwPcbCIyP0vUvPF24aRSqLbl1Ietp3U7rXGfntq9kYtaEtu+SiPPkcbc3UtQH7hP7rgKHUK1+quHABe591IAnoFo7Aw0tfInuVQelUFsaxt0dGWMJgsNO+ujO+P4KsguSQdxI1eZPK+kEHXQbU3WzbeHJjmOUJwqM+0uC6y+Hp/aIlELYc5+n+K5enPZHIC+TtZB1mcSGZp2Ytqd7Aw7GOdCTQM8wrKIDIDYuzc3cv0DTKIoSEhdJZwY9r+jVzGyV4N0R8OlW9Av5kSZhc+YMj1R82RZ3jYCZGPLVQ+s2Ia5iF783NmG1srXLMm0GdGnW/7",
   // android license key for applicationID: com.microblink.sample
   android:
-    "sRwAAAAbY29tLnBsYXRhZm9ybWEuYXBwYXV0ZWNvaW90nkQuE329KEOQ9d/gblo0pUGkeHZUrVvVcP70ptu0igONVOrkgYFl1/RWuM4Fnrh2J1QZvjUFKzOLCbkT7Qz+Yh7Lyehf3z+QM9nkYGV7OFK4hM9YuRBW3mYKLxzUhUKBzjeATOkSGFAtSyC2c+fPoix8NsLTzOWkX6DLS13qrjp/tiqrIttiwfxZTOs5opa3Xdr3/fhQeCh8vUFkPBNenHfwKtYo0QTox+sw3ScCA9s=",
+    "sRwAAAAVY29tLm1pY3JvYmxpbmsuc2FtcGxlU9kJdZhZkGlTu9U3OJtAYGbizcXhV5K1maxiDMJFmnmLT3IzuOot5d+g5HVnoLFduWFtl9egla46EkGtuAdJd1p0a67N0Q2JnbcTqZB5h6ksNpjPsrmcY9OLjmlul2n9rcunJkM1cxu96HES75tdPBQvPz+WBbdx8Tz1y8ZyW7sNjqzemaZ5oqGZEQPj/NrWl2nHjeFxectQG9iOVTmHUNaSPZN4bsYYAeD7v6bGrXG2sv1FrkMjPIQ7Ic50r/drJmq+qhMNPZOJ+M9PfyO5zGuZN+uChv5k4lxcRRZ/sYgxNvuA6plBiFcg3uYugkuIDTD1fVyCYE5BSUzOGQjyacgH",
 });
 
 var renderIf = function (condition, content) {
@@ -50,7 +55,7 @@ function buildDateResult(result, key) {
   return "";
 }
 
-export default class App extends Component {
+export default class Sample extends Component {
   constructor(props) {
     super(props);
 
@@ -336,3 +341,4 @@ const styles = StyleSheet.create({
     margin: 10,
   },
 });
+
